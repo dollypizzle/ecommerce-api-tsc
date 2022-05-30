@@ -3,6 +3,8 @@ import jwt from 'jsonwebtoken';
 import { User } from '../models/user';
 
 export interface IntRequest extends Request {
+  body: any;
+  params: any;
   token?: string | null | undefined;
   user?: { [u: string]: any } | null | undefined;
   header: string | any;

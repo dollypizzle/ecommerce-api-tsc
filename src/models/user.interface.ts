@@ -18,4 +18,3 @@ export interface IntUserModel extends Model<IntUser> {
   findByCredentials: (email: string, password: string) => IntUser;
 }
 
-// Promise<IntUser>;
