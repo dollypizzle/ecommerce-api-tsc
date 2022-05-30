@@ -15,7 +15,6 @@ app.use(express_1.default.json());
 app.use(cors_1.default());
 app.use(user_1.userRouter);
 app.use(product_1.productRouter);
-//app.use(cartRouter);
 mongoose_1.default.connect("" + process.env.MONGODB_URL, {
     useNewUrlParser: true,
     useCreateIndex: true,
